@@ -1,0 +1,43 @@
+# ---- Secrets: environment files, keys, credentials ----
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.*
+credentials.*
+
+# ---- Dependencies (this app has none, but just in case) ----
+node_modules/
+
+# ---- Financial data: statements, backups, setup files, databases ----
+# Bank statements
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.xlsm
+*.ods
+*.numbers
+*.ofx
+*.qfx
+*.qif
+*.pdf
+# App backups and personal setup files (expense-tracker-backup-*.json, setup.json)
+*.json
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# The fake sample files the tests use are the only exceptions.
+# Listed by name, so a real statement saved in sample-data/ is still ignored.
+!sample-data/sample-bank.csv
+!sample-data/sample-bank-eu.csv
+!sample-data/sample-revolut.csv
+!sample-data/sample-otp.xlsx
+
+# ---- Local tools and Mac clutter ----
+.claude/
+.DS_Store

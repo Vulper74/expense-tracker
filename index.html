@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Expense Tracker & FIRE Planner</title>
+  <meta name="theme-color" content="#f9f9f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Expenses">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Expense Tracker <span class="muted">&amp; FIRE Planner</span></h1>
+    <label class="currency-switch">
+      <span class="visually-hidden">Show amounts in</span>
+      <select id="display-currency" aria-label="Show amounts in"></select>
+    </label>
+    <nav aria-label="Sections">
+      <button data-tab="dashboard"><span class="tab-icon" aria-hidden="true">▦</span>Dashboard</button>
+      <button data-tab="transactions"><span class="tab-icon" aria-hidden="true">≡</span>Transactions</button>
+      <button data-tab="import"><span class="tab-icon" aria-hidden="true">⇪</span>Import</button>
+      <button data-tab="accounts"><span class="tab-icon" aria-hidden="true">◈</span>Accounts</button>
+      <button data-tab="fire"><span class="tab-icon" aria-hidden="true">◎</span>FIRE</button>
+      <button data-tab="settings"><span class="tab-icon" aria-hidden="true">⚙</span>Settings</button>
+    </nav>
+  </header>
+  <main id="view"></main>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
